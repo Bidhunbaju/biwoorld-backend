@@ -1,10 +1,12 @@
 Flask==2.2.5
 Werkzeug==2.2.3
-# ✅ Use the official PyTorch CPU-only repository (no +cpu suffix)
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==1.13.1
-torchvision==0.14.1
-torchaudio==0.13.1
+
+# ✅ Explicit install of PyTorch from CPU wheel URLs
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+torchaudio==0.13.1+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
+
 numpy==1.24.3
 Pillow
 opencv-python
