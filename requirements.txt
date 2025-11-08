@@ -1,11 +1,13 @@
 Flask==2.2.5
 Werkzeug==2.2.3
 
-# ✅ Explicit install of PyTorch from CPU wheel URLs
-torch==1.13.1+cpu
-torchvision==0.14.1+cpu
-torchaudio==0.13.1+cpu
--f https://download.pytorch.org/whl/torch_stable.html
+# ✅ Install specific PyTorch CPU wheels from official URLs (Render compatible)
+torch==1.13.1+cpu \
+    --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
+torchvision==0.14.1+cpu \
+    --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
+torchaudio==0.13.1+cpu \
+    --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
 
 numpy==1.24.3
 Pillow
