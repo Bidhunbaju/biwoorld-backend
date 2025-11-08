@@ -1,9 +1,10 @@
 Flask==2.2.5
 Werkzeug==2.2.3
---find-links https://download.pytorch.org/whl/torch_stable.html
-torch==2.1.0+cpu
-torchvision==0.16.0+cpu
-torchaudio==2.1.0+cpu
+# Use the official PyTorch CPU-only index (works with Render)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
 numpy
 Pillow
 opencv-python
