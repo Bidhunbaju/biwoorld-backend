@@ -1,0 +1,13 @@
+Flask==2.2.5
+Werkzeug==2.2.3
+torch==2.0.0+cpu
+torchvision==0.15.1+cpu
+torchaudio==2.0.1+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
+numpy
+Pillow
+opencv-python
+basicsr
+realesrgan
+discord.py
+requests
