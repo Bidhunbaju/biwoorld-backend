@@ -1,8 +1,11 @@
 Flask==2.2.5
 Werkzeug==2.2.3
+# Use official PyTorch CPU wheels for compatibility
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.0.1
 torchvision==0.15.1
 torchaudio==2.0.1
+
 numpy
 Pillow
 opencv-python
