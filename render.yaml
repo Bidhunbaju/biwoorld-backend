@@ -9,5 +9,3 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.13
-      - key: DISCORD_TOKEN
-        sync: false

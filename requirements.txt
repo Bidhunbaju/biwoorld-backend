@@ -1,17 +1,13 @@
 Flask==2.2.5
 Werkzeug==2.2.3
-
-# Make sure pip can see official CPU wheels
 --find-links https://download.pytorch.org/whl/torch_stable.html
-
 torch==2.1.0+cpu
 torchvision==0.16.0+cpu
 torchaudio==2.1.0+cpu
-
 numpy
 Pillow
 opencv-python
-basicsr
 realesrgan
+basicsr
 discord.py
 requests
