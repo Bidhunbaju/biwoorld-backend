@@ -1,12 +1,11 @@
 services:
   - type: web
-    name: biwoorld-upscaler-backend
+    name: biwoorld-backend
     env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot_run.py"
     plan: free
-    buildCommand: |
-      pip install -r requirements.txt
-    startCommand: |
-      python bot_run.py
+    region: singapore
     envVars:
       - key: DISCORD_TOKEN
         sync: false
