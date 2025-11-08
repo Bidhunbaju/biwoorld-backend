@@ -2,10 +2,12 @@ services:
   - type: web
     name: biwoorld-backend
     env: python
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
     startCommand: "python bot_run.py"
     plan: free
     region: singapore
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
       - key: DISCORD_TOKEN
         sync: false
