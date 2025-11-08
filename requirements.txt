@@ -1,11 +1,11 @@
 Flask==2.2.5
 Werkzeug==2.2.3
-# Use the official PyTorch CPU-only index (works with Render)
+# Stable PyTorch + CPU wheels for Render
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.1.0
-torchvision==0.16.0
-torchaudio==2.1.0
-numpy
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+torchaudio==0.13.1+cpu
+numpy==1.24.3
 Pillow
 opencv-python
 realesrgan
