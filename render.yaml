@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: biwoorld-upscaler-backend
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: |
+      python bot_run.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
